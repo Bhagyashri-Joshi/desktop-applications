@@ -3,4 +3,4 @@ out/
 *.jar
 .idea/
 .vscode/
-.csv
+*.csv
