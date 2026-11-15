@@ -1,7 +1,5 @@
-# ignore these files
 out/
 *.class
 *.jar
 .idea/
 .vscode/
-*.csv
