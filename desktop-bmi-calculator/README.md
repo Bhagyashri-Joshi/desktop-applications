@@ -112,11 +112,12 @@ Date,Units,Weight,Height,BMI,Category
 
 ```
 bmi-calculator/
-├── BmiCalculator.java   # Entire application: UI, validation, calculation and CSV export
+├── BMICalculator.java   # Entire application: UI, validation, calculation and CSV export
+├── icon.png             # Desktop window icon
 └── README.md
 ```
 
-After compiling, `javac` also generates `BmiCalculator.class` in the same folder.
+After compiling, `javac` also generates `BMICalculator.class` in the same folder.
 
 ---
 
@@ -155,30 +156,30 @@ cd bmi-calculator
 
 ### 2. Compile
 
-Run this from the folder that contains `BmiCalculator.java`:
+Run this from the folder that contains `BMICalculator.java` and `icon.png`:
 
 ```bash
-javac BmiCalculator.java
+javac BMICalculator.java
 ```
 
 ### 3. Run
 
 ```bash
-java BmiCalculator
+java BMICalculator
 ```
 
 ### Running from an IDE
 
 1. Create a new Java project (IntelliJ IDEA, Eclipse, NetBeans or VS Code).
-2. Add `BmiCalculator.java` to the source folder.
-3. Run the `BmiCalculator` class.
+2. Add `BMICalculator.java` and `icon.png` to the project, with `icon.png` available on the classpath.
+3. Run the `BMICalculator` class.
 
 ### Optional: build a runnable JAR
 
 ```bash
-javac BmiCalculator.java
-jar cfe BmiCalculator.jar BmiCalculator BmiCalculator.class
-java -jar BmiCalculator.jar
+javac BMICalculator.java
+jar cfe BMICalculator.jar BMICalculator BMICalculator.class icon.png
+java -jar BMICalculator.jar
 ```
 
 ---
@@ -199,8 +200,8 @@ java -jar BmiCalculator.jar
 | Problem | Fix |
 |---------|-----|
 | `javac` is not recognised | Install a JDK and add its `bin` folder to your `PATH` |
-| `Could not find or load main class BmiCalculator` | Run `java BmiCalculator` from the same folder where the `.class` file was generated |
-| `class BmiCalculator is public, should be declared in a file named BmiCalculator.java` | Make sure the file name matches the class name exactly, including capital letters |
+| `Could not find or load main class BMICalculator` | Run `java BMICalculator` from the same folder where the `.class` file was generated |
+| `class BMICalculator is public, should be declared in a file named BMICalculator.java` | Make sure the file name matches the class name exactly, including capital letters |
 | Warning dialog: "must be a valid number" | Use digits and an optional decimal point only, with no units or commas |
 | Save button is greyed out | Calculate a result first; Save is enabled only when there is a result |
 | Window looks different on each OS | The app uses the native look and feel, so button and field styling follows your system |

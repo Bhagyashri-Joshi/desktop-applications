@@ -3,4 +3,3 @@ out/
 *.jar
 .idea/
 .vscode/
-*.csv

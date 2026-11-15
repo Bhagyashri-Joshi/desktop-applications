@@ -44,6 +44,7 @@ public class BMICalculator extends JFrame {
 
     public BMICalculator() {
         super("BMI Calculator");
+        setIconImage(new ImageIcon(BMICalculator.class.getResource("/icon.png")).getImage());
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         buildUi();
         wireEvents();
