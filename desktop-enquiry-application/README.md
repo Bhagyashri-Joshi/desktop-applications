@@ -43,7 +43,6 @@ A desktop application (a small mini-CRM) for recording and managing customer enq
 3. **Add / Edit Enquiry dialog** - a form with validation, used for both creating and updating records.
 4. **Export dialog** - a standard save-file dialog for the CSV report.
 
-> Tip: add screenshots to a `screenshots/` folder and link them here, for example `![Dashboard](screenshots/dashboard.png)`.
 
 ## How Status Tracking & Follow-ups Work
 
@@ -84,6 +83,8 @@ The search box matches a partial **name** or **email**, or an exact **enquiry ID
 
 ```
 desktop-enquiry-application/
+`--assets/
+    `--icon.png
 |-- Main.java             # Entry point: sets look and feel, checks DB, opens the window
 |-- MainFrame.java        # Main window: Dashboard tab + Enquiries tab
 |-- EnquiryDialog.java    # Add / Edit form with validation
