@@ -1,0 +1,22 @@
+# Secrets
+.env
+
+# Compiled Java
+*.class
+bin/
+out/
+
+# Downloaded dependencies (see README: download MySQL Connector/J into lib/)
+lib/
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# Generated reports
+enquiry_report_*.csv
+
+# OS files
+.DS_Store
+Thumbs.db
